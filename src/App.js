@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -33,9 +33,17 @@ class App extends Component {
   }
 }
 
+// Executed with each change of the store's state
+// The argument "state" could be named anything
+// Changing the key (items, in this case) changes the prop within the component
+// const mapStateToProps = (state) => {
+//   debugger;
+//   return { items: state.items }
+// }
+
 const mapStateToProps = (state) => {
-  debugger;
-  return { items: state.items }
+  return { orangePeel: ['a', 'b', 'c'] };
 }
 
+// Connect keeps a proper separation of concerns
 export default connect(mapStateToProps)(App);
