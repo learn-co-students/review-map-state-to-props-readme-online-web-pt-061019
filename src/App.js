@@ -45,5 +45,5 @@ const mapStateToProps = (state) => {
   return { orangePeel: ['a', 'b', 'c'] };
 }
 
-// Connect keeps a proper separation of concerns
+// Connect keeps a proper separation of concerns. App could be repurposed to do anything else without
 export default connect(mapStateToProps)(App);
