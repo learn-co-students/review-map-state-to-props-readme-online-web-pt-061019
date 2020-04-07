@@ -39,3 +39,12 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(App);
+
+// connect() function calls the mapStateToProps() function each time there is a change in state, and that mapStateToProps() receives state as its first argument.
+
+// const vanilla = (milkshake) => {
+//   debugger;
+//   return { items: milkshake.items }
+// }
+ 
+// export default connect(vanilla)(App);
